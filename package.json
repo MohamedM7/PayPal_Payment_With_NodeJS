@@ -1,0 +1,26 @@
+{
+  "name": "paypal_payment_with_nodejs-main",
+  "version": "1.0.0",
+  "description": "integrate Paypal Payment Gateway in NodeJs ( Paypal REST SDKs )",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedM7/PayPal_Payment_With_NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedM7/PayPal_Payment_With_NodeJS/issues"
+  },
+  "homepage": "https://github.com/MohamedM7/PayPal_Payment_With_NodeJS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
