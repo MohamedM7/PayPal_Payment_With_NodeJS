@@ -1,17 +1,24 @@
+<!--  Mammeri Moahmed --------------------------------------------------
+ *    ==================================================================
+ *    Website : www.mohamedmammeri.com
+ *    Email   : mammeri244@gmail.com
+ * -------------------------------------------------------------------->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <!-- Update the JavaScript SDK with buttons and funding eligibility -->
-      <script src="https://www.paypal.com/sdk/js?client-id= CLIENT-ID"></script>
-      <script src="/index.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=CLIENT_ID&components=buttons"></script> <!-- Replace CLINET_ID with your actual PayPal API Client ID -->
+    <script src="/index.js"></script>
     
-    <title>Document</title>
+    <title>PayPal Payments</title>
 </head>
 <body>
-    <input type="number" placeholder="Donate Amount" id="amount">
-    <div id="PaypalSection"></div>
+   <!--- <input type="number" placeholder="Donate Amount" id="amount">    -->
+    <!--You can create a button or a form  to allow users to make payments. or just do like this : -->
+    <div id="paypal-button-container"></div>
+
 </body>
 </html>
