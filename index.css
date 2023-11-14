@@ -1,0 +1,17 @@
+section {
+    margin-bottom: 20px;
+}
+
+.item-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.payment-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

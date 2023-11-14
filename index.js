@@ -4,13 +4,15 @@
  *    Email   : mammeri244@gmail.com
  * --------------------------------------------------------------------*/
 
-
+const donationAmount = document.getElementById('donationAmount').value;
+const donateButton = document.getElementById('donateButton');
+donateButton.addEventListener('click',()=>{
 paypal.Buttons({
     createOrder: function(data, actions) {
         return actions.order.create({
             purchase_units: [{
                 amount: {
-                    value: '10.00' // Set the amount you want to charge or pass it within a var
+                    value: donationAmount // Set the amount you want to charge or pass it within a var
                 }
             }]
         });
@@ -22,6 +24,7 @@ paypal.Buttons({
         });
     }
 }).render('#paypal-button-container');
+});
 
 
 /* paypal.Buttons({   // Customize your buttons by passing in the style option.
