@@ -35,5 +35,29 @@ paypal.Buttons({
       label:  'paypal'
     }
   }).render('#paypal-button-container');
-      */
+*/
+
+
+/*-----------------------------------------------------------------------------*/    
+/*=========================== Second Section API =============================*/
+
+function makePayment() {
+    const itemID = 'item1';   //------- Replace with the actual ID so you can reach it from the DataBase
+
     
+    fetch('/pay', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ itemID }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        window.location.href = data.approval_url;        //------ Redirect to the PayPal URL
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
