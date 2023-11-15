@@ -1,11 +1,36 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
 section {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    padding: 50px 50px 50px 50px;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+   
+    
+
 }
 
+#s1{
+    text-align: center;
+    background-color: #ccc;
+}
+
+
+
+
+
 .item-card {
-    border: 1px solid #ccc;
+    border: 1px solid #f79595;
     padding: 10px;
     width: 200px;
+    text-align: center;
+    margin: auto;
 }
 
 .payment-button {
